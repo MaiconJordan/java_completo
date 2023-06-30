@@ -1,6 +1,6 @@
-package br.com.program;
+package br.com.triangule.program;
 
-import br.com.triangulo.Triangle;
+import br.com.triangule.triangulo.Triangle;
 
 import java.util.Locale;
 import java.util.Scanner;
