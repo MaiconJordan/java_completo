@@ -12,19 +12,37 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner  sc = new Scanner(System.in);
 
-        Product produto = new Product();
+        Product product = new Product();
 
 
-        System.out.println("Enter product name: ");
-        produto.name = sc.nextLine();
-        System.out.println("Enter product quantity: ");
-        produto.quantity = sc.nextInt();
-        System.out.println("Enter product price: ");
-        produto.price = sc.nextDouble();
+        System.out.print("Enter product name: ");
+        product.name = sc.nextLine();
+        System.out.print("Enter product quantity: ");
+        product.quantity = sc.nextInt();
+        System.out.print("Enter product price: ");
+        product.price = sc.nextDouble();
 
-        double total = produto.totalValueInStock();
+        double total = product.totalValueInStock();
+        System.out.println();
+        System.out.println("Product data: " + product);
 
-        System.out.println(produto);
+        System.out.println();
+        System.out.print("Enter the number products to be added in stock: ");
+        int quantity = sc.nextInt();
+
+        product.addProducts(quantity);
+
+        System.out.println();
+        System.out.println("Updated data: " + product);
+
+        System.out.println();
+        System.out.print("enter the number of products to be removed from stock: ");
+        quantity = sc.nextInt();
+        product.removeProducts(quantity);
+        System.out.println("Update data: " + product);
+
+
+
 
         sc.close();
     }
