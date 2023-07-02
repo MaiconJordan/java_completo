@@ -11,15 +11,15 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner  sc = new Scanner(System.in);
 
-        Product product = new Product();
+        System.out.println("Enter product data: ");
+        System.out.print("Name: ");
+        String name = sc.nextLine();
+        System.out.print("Price: ");
+        double price = sc.nextDouble();
+        System.out.print("Quantity in stock: ");
+        int quantity = sc.nextInt();
 
-
-        System.out.print("Enter product name: ");
-        product.name = sc.nextLine();
-        System.out.print("Enter product quantity: ");
-        product.quantity = sc.nextInt();
-        System.out.print("Enter product price: ");
-        product.price = sc.nextDouble();
+        Product product = new Product(name, price, quantity);
 
         double total = product.totalValueInStock();
         System.out.println();
@@ -27,7 +27,7 @@ public class Program {
 
         System.out.println();
         System.out.print("Enter the number products to be added in stock: ");
-        int quantity = sc.nextInt();
+         quantity = sc.nextInt();
 
         product.addProducts(quantity);
 
