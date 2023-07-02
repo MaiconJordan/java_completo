@@ -1,8 +1,7 @@
-package br.com.application;
+package br.com.product.application;
 
-import br.com.entities.Product;
+import br.com.product.entities.Product;
 
-import javax.swing.*;
 import java.util.Locale;
 import java.util.Scanner;
 

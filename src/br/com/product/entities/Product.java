@@ -1,4 +1,4 @@
-package br.com.entities;
+package br.com.product.entities;
 
 public class Product {
     public String name;

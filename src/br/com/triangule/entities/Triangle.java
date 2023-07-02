@@ -1,4 +1,4 @@
-package br.com.triangule.triangulo;
+package br.com.triangule.entities;
 
 public class Triangle {
     public double a;
