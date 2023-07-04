@@ -39,4 +39,10 @@ public class Account {
         balance -= amount + 5.0;
     }
 
+    @Override
+    public String toString() {
+        return "Account "  + number +
+                ", holder: " + holder +
+                ", balance: $" + String.format("%.2f", balance);
+    }
 }
