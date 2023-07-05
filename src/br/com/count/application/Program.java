@@ -28,11 +28,6 @@ public class Program {
             account = new Account(number, holder);
         }
 
-        System.out.println();
-        System.out.println("Account data");
-        System.out.println(account);
-        System.out.println();
-
         System.out.print("Enter a deposit value: ");
         double depositValue = sc.nextDouble();
         account.deposit(depositValue);
