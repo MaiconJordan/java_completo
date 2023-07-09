@@ -1,4 +1,4 @@
-package br.com.triangule.entities;
+package br.com.exercicio.entities;
 
 public class Triangle {
     public double a;
