@@ -11,7 +11,7 @@ public class Datas {
     public static void main(String[] args) {
         LocalDate d01 = LocalDate.now();
         LocalDateTime d02 = LocalDateTime.now();
-        LocalDate d03 = LocalDate.parse("2023-07-10");
+        LocalDate d03 = LocalDate.parse("2023-07-10");a
         LocalDate d04 = LocalDate.parse("2022-07-20");
         LocalDateTime d05 = LocalDateTime.parse("2022-07-20T01:30:26");
         Instant d06 = Instant.parse("2022-07-20T01:30:26Z");
@@ -38,6 +38,7 @@ public class Datas {
         System.out.println("d06 = " + fmt3.format(d06));
         System.out.println("d06 = " + fmt5.format(d06));
         System.out.println("d06 = " + d06.toString());
+        System.out.println("-------------------");
 
     }
 }
