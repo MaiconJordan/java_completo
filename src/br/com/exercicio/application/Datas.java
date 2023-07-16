@@ -38,6 +38,7 @@ public class Datas {
         System.out.println("d06 = " + fmt3.format(d06));
         System.out.println("d06 = " + fmt5.format(d06));
         System.out.println("d06 = " + d06.toString());
+        System.out.println("d06 = " + d06.toString());
         System.out.println("-------------------");
 
     }
