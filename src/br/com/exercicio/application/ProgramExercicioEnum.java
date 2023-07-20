@@ -32,9 +32,9 @@ public class ProgramExercicioEnum {
         System.out.println("How many contract to this worker?");
         int n = sc.nextInt();
 
-        for (int i = 0; i <= n; i++){
+        for (int i = 1; i <= n; i++){
             System.out.println("Enter contract #" +i+ " data: ");
-            System.out.println("Date(DD/MM/YYYY)");
+            System.out.print("Date(DD/MM/YYYY)");
             Date dateContract = sdf.parse(sc.next());
             System.out.println("Value per hour: ");
             Double valuePerHour = sc.nextDouble();
@@ -42,8 +42,18 @@ public class ProgramExercicioEnum {
             int hour = sc.nextInt();
             HourContract contract = new HourContract(dateContract, valuePerHour, hour);
             worker.addContract(contract);
-
         }
+
+        System.out.println();
+        System.out.print("Enter month and year to calculate income (MM/YYYY): ");
+        String monthAndYear = sc.next();
+        int month = Integer.parseInt(monthAndYear.substring(0,2));
+        int year = Integer.parseInt(monthAndYear.substring((3)));
+        System.out.println("Name: " + worker.getName());
+        System.out.println("Departament: " + worker.getDepartament().getName());
+        System.out.println("Income for" + monthAndYear + ": " + String.format("%.2f", worker.income(year, month)));
+
+
 
 
 

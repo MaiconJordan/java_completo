@@ -1,7 +1,7 @@
 package br.com.exercicio.entities.enums;
 
 public enum WokerLevel {
-    JUNIO,
+    JUNIOR,
     MID_LEVEL,
     SENIOR;
 }
