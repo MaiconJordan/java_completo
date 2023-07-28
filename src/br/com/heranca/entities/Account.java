@@ -3,7 +3,7 @@ package br.com.heranca.entities;
 public class Account {
     private Integer number;
     private String holder;
-    private Double balance;
+    protected Double balance;
 
     public Account() {
     }
