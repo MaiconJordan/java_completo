@@ -36,6 +36,7 @@ public class Program {
 
         // EX. OVERIDE E SPER
 
+        /**
         Account acc1 = new Account(1001, "Alex", 1000.00);
         acc1.withdraw(200.0);
         System.out.println(acc1.getBalance());
@@ -48,7 +49,11 @@ public class Program {
         acc3.withdraw(200.0);
         System.out.println(acc3.getBalance());
 
+    **/
 
+        // CLASSE ABSTRADA
+
+        
 
     }
 }
