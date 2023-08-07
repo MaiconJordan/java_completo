@@ -4,6 +4,9 @@ import br.com.heranca.entities.Account;
 import br.com.heranca.entities.BusinessAccount;
 import br.com.heranca.entities.SavingsAccount;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Program {
     public static void main(String[] args) {
         /**
@@ -51,7 +54,26 @@ public class Program {
 
     **/
 
-        // CLASSE ABSTRADA
+        List<Account> list = new ArrayList<>();
+
+        list.add(new BusinessAccount(1000,"Maria",100.0,100.0));
+        list.add(new BusinessAccount(1001,"Joao",200.0,100.0));
+        list.add(new SavingsAccount(1002,"Bob",300.0,0.1));
+        list.add(new SavingsAccount(1002,"Bob",400.0,0.1));
+
+
+        double sum = 0.0;
+
+        for(Account acc : list){
+         sum +=   acc.getBalance();
+        }
+
+        System.out.println(sum);
+
+
+
+
+
 
         
 
