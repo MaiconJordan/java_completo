@@ -70,6 +70,14 @@ public class Program {
 
         System.out.println(sum);
 
+        for (Account acc : list) {
+            acc.deposit(10.0);
+        }
+
+        for (Account account : list) {
+            System.out.println(account.getBalance());
+        }
+
 
 
 
