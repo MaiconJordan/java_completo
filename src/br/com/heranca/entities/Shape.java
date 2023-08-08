@@ -2,9 +2,22 @@ package br.com.heranca.entities;
 
 import br.com.heranca.entities.enums.Color;
 
-public class Shape {
+public abstract class Shape {
     private Color color;
 
-    
+    public Shape(){}
 
+    public Shape(Color color) {
+        this.color = color;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public abstract double area();
 }
