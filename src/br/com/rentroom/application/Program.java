@@ -1,8 +1,6 @@
 package br.com.rentroom.application;
 
 import br.com.rentroom.entities.Students;
-import br.com.student.entities.Student;
-
 import java.util.Scanner;
 
 public class Program {
