@@ -6,10 +6,15 @@ public class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String[] vect = sc.nextLine().split(" ");
-        int position = sc.nextInt();
-        System.out.println(vect[position]);
-
+        try {
+            String[] vect = sc.nextLine().split(" ");
+            int position = sc.nextInt();
+            System.out.println(vect[position]);
+        }
+        catch (IndexOutOfBoundsException e){
+            System.out.println("Position not exist");
+        }
+        System.out.println("End Program");
         sc.close();
     }
 }
