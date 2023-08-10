@@ -1,5 +1,6 @@
 package br.com.trycatch.application;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Program {
@@ -13,6 +14,9 @@ public class Program {
         }
         catch (IndexOutOfBoundsException e){
             System.out.println("Position not exist");
+        }
+        catch (InputMismatchException e){
+            System.out.println("input error");
         }
         System.out.println("End Program");
         sc.close();
