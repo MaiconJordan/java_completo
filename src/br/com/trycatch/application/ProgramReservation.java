@@ -12,24 +12,34 @@ public class ProgramReservation {
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-        System.out.print("Room: ");
+        System.out.print("Room number: ");
         int number = sc.nextInt();
+        System.out.print("Check-in date (dd/MM/yyyy): ");
+        Date checkIn = sdf.parse(sc.next());
+        System.out.print("Check-out date (dd/MM/yyyy): ");
+        Date checkOut = sdf.parse(sc.next());
 
-        System.out.print("Check in: ");
-        Date in = sdf.parse(sc.next());
-        System.out.print("Check out: ");
-        Date out = sdf.parse(sc.next());
-
-        if(!out.after(in)){
+        if (!checkOut.after(checkIn)) {
             System.out.println("Error in reservation: Check-out date must be after check-in date");
-        } else {
-            Reservation reservation = new Reservation(number,in,out);
-            System.out.println(reservation);
+        }
+        else {
+            Reservation reservation = new Reservation(number, checkIn, checkOut);
+            System.out.println("Reservation: " + reservation);
+
+            System.out.println();
+            System.out.println("Enter data to update the reservation:");
+            System.out.print("Check-in date (dd/MM/yyyy): ");
+            checkIn = sdf.parse(sc.next());
+            System.out.print("Check-out date (dd/MM/yyyy): ");
+            checkOut = sdf.parse(sc.next());
+
+
+            else {
+                reservation.updateDate(checkIn, checkOut);
+                System.out.println("Reservation: " + reservation);
+            }
         }
 
-
-
         sc.close();
-
     }
 }
