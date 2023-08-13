@@ -33,7 +33,10 @@ public class ProgramReservation {
             System.out.print("Check-out date (dd/MM/yyyy): ");
             checkOut = sdf.parse(sc.next());
 
-
+            String error = reservation.updateDate(checkIn,checkOut);
+            if(error != null){
+                System.out.println("Error in reservation in: " + error);
+            }
             else {
                 reservation.updateDate(checkIn, checkOut);
                 System.out.println("Reservation: " + reservation);
