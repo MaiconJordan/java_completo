@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
-        File file = new File(".\\ola.txt");
+        File file = new File("/home/maicon.rocha@jtech.corp/Documentos/ola.txt");
         Scanner sc = null;
 
         try {
