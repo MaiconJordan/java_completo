@@ -40,6 +40,7 @@ public class ProgramShape {
                 list.add(new Circle(color,radius));
             }
         }
+        // add comentario teste
 
         System.out.println();
         System.out.println("SHAPE AREAS: ");
