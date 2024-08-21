@@ -8,6 +8,7 @@ public class main {
     sasuke.nome = "sasuke";
     sasuke.aldeia = "Fogo";
     sasuke.shariganAtivado();
+    System.out.println("Teste");
     }
 
     
